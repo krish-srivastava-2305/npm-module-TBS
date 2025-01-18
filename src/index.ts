@@ -4,7 +4,7 @@ interface Common {
 }
 
 const common: Common = {
-  name: "common",
+  name: "commo",
   marks: 100,
 };
 
