@@ -1,11 +1,11 @@
-interface Common {
-  name: string;
-  marks: number;
-}
+export * from "./errors/bad-request-error";
+export * from "./errors/custom-error";
+export * from "./errors/db-connection.error";
+export * from "./errors/not-authorized-error";
+export * from "./errors/request-validation.error";
 
-const common: Common = {
-  name: "commo",
-  marks: 100,
-};
 
-export default common;
+export * from "./middlewares/auth.middleware";
+export * from "./middlewares/current-user.middleware";
+export * from "./middlewares/error-handler.middleware";
+
