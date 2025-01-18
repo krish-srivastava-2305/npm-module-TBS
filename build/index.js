@@ -19,6 +19,7 @@ __exportStar(require("./errors/custom-error"), exports);
 __exportStar(require("./errors/db-connection.error"), exports);
 __exportStar(require("./errors/not-authorized-error"), exports);
 __exportStar(require("./errors/request-validation.error"), exports);
+__exportStar(require("./errors/not-found-error"), exports);
 __exportStar(require("./middlewares/auth.middleware"), exports);
 __exportStar(require("./middlewares/current-user.middleware"), exports);
 __exportStar(require("./middlewares/error-handler.middleware"), exports);
