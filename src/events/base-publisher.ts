@@ -1,6 +1,6 @@
 import { JetStreamManager, NatsConnection, JetStreamClient } from "nats";
 
-abstract class Publisher {
+export abstract class Publisher {
     abstract name: string;
     abstract subject: string[];
     
@@ -36,5 +36,3 @@ abstract class Publisher {
       this.js.publish(publishId, JSON.stringify(data));
     }
 }
-
-export default Publisher;
