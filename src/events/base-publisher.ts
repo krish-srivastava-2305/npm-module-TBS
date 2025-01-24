@@ -35,4 +35,6 @@ abstract class Publisher {
       await this.createStream();
       this.js.publish(publishId, JSON.stringify(data));
     }
-  }
+}
+
+export default Publisher;
