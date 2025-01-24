@@ -23,3 +23,5 @@ __exportStar(require("./errors/not-found-error"), exports);
 __exportStar(require("./middlewares/auth.middleware"), exports);
 __exportStar(require("./middlewares/current-user.middleware"), exports);
 __exportStar(require("./middlewares/error-handler.middleware"), exports);
+__exportStar(require("./events/base-publisher"), exports);
+__exportStar(require("./events/base-subscriber"), exports);
