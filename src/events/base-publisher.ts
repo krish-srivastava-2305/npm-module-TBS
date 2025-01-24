@@ -32,7 +32,12 @@ export abstract class Publisher {
     }
   
     async publish(publishId: string, data: any) {
-      await this.createStream();
-      this.js.publish(publishId, JSON.stringify(data));
-    }
+      try {
+          await this.createStream();
+          await this.js.publish(publishId, Buffer.from(JSON.stringify(data)));
+      } catch (error) {
+          console.error('Publishing error:', error);
+          throw error;
+      }
+  }
 }
