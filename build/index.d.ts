@@ -9,3 +9,4 @@ export * from "./middlewares/current-user.middleware";
 export * from "./middlewares/error-handler.middleware";
 export * from "./events/base-publisher";
 export * from "./events/base-subscriber";
+export * from "./types/order-status";

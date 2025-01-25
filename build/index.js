@@ -25,3 +25,4 @@ __exportStar(require("./middlewares/current-user.middleware"), exports);
 __exportStar(require("./middlewares/error-handler.middleware"), exports);
 __exportStar(require("./events/base-publisher"), exports);
 __exportStar(require("./events/base-subscriber"), exports);
+__exportStar(require("./types/order-status"), exports);
